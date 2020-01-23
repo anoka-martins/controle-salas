@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.ListaEventosSalasActivity">
+
+    <ImageView
+        android:id="@+id/id_banner_inicial_eventos"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@color/colorPrimary" />
+
+    <TextView
+        android:id="@+id/id_titulo_page"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="reuniãozinhas"
+        android:textAlignment="viewStart"
+        android:textColor="#FF8C00 "
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@id/id_banner_inicial_eventos"
+        app:layout_constraintEnd_toEndOf="@id/id_banner_inicial_eventos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/id_banner_inicial_eventos"
+        app:layout_constraintTop_toTopOf="@id/id_banner_inicial_eventos"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/id_descricao_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="600dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="eventos cadastrados e salas reservadas"
+        android:textAlignment="viewStart"
+        android:textAllCaps="false"
+        android:textColor="#FAF5F5"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_titulo_page"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <ListView
+        android:id="@+id/lista_eventos_salas_listview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_banner_inicial_eventos"
+        tools:listitem="@layout/unidade_evento" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

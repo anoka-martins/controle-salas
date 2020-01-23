@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".ui.activities.CadastroColaboradorActivity">
+
+    <ImageView
+        android:id="@+id/id_logo_balao"
+        android:layout_width="113dp"
+        android:layout_height="140dp"
+        android:src="@mipmap/ic_logo_fundo_branco"
+        app:layout_constraintBottom_toTopOf="@+id/id_texto_interacao_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/id_nome_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="reuniãozinha"
+        android:textAlignment="center"
+        android:textColor="#FF8C00"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_texto_interacao_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.698"
+        app:layout_constraintStart_toStartOf="@+id/id_logo_balao"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <TextView
+        android:id="@+id/id_slogan"
+        android:layout_width="179dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="planejamento &amp; pessoas"
+        android:textColor="#191970"
+        app:layout_constraintBottom_toTopOf="@+id/id_texto_interacao_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/id_logo_balao"
+        app:layout_constraintTop_toBottomOf="@+id/id_nome_app"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <TextView
+        android:id="@+id/id_texto_interacao_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:fontFamily="@font/montserrat"
+        android:text="bem-vind@! :)"
+        android:textColor="#191970"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/id_texto_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="NOME"
+        android:textColor="#191970"
+        app:layout_constraintBottom_toTopOf="@+id/id_campo_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.265"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_texto_interacao_usuario"
+        app:layout_constraintVertical_bias="0.836" />
+
+    <EditText
+        android:id="@+id/id_campo_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/id_campo_email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_texto_interacao_usuario"
+        app:layout_constraintVertical_bias="0.585" />
+
+    <TextView
+        android:id="@+id/id_texto_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="E-MAIL"
+        android:textColor="#191970"
+        app:layout_constraintBottom_toTopOf="@+id/id_texto_senha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_texto_nome" />
+
+    <EditText
+        android:id="@+id/id_campo_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_texto_interacao_usuario"
+        app:layout_constraintVertical_bias="0.372" />
+
+    <TextView
+        android:id="@+id/id_texto_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="SENHA"
+        android:textColor="#191970"
+        app:layout_constraintBottom_toTopOf="@+id/id_botao_efetuar_cadastro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.27"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_texto_nome"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/id_campo_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_campo_email"
+        app:layout_constraintVertical_bias="0.248" />
+
+    <Button
+        android:id="@+id/id_botao_efetuar_cadastro"
+        android:layout_width="113dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="60dp"
+        android:background="#191970"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="CADASTRAR"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

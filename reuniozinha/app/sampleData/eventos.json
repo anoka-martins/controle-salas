@@ -1,0 +1,22 @@
+{
+  "eventos": [
+    {
+      "colaborador": "Ana Martins",
+      "salaEscolhida": "@drawble/sala_conselho_jedi",
+      "empresa": "Wise System",
+      "quantiadeDePessoas": 6,
+      "coffeBreak": true,
+      "dataReuniao": "29/01/2020"
+    },
+
+    {
+      "colaborador": "Ana Martins",
+      "salaEscolhida": "Sala Conselho Jedi",
+      "empresa": "Wise System",
+      "quantiadeDePessoas": 6,
+      "coffeBreak": true,
+      "dataReuniao": "29/01/2020"
+    }
+
+  ]
+}

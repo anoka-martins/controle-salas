@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">reuniãozinha</string>
+    <string name="title_activity_lista_eventos_salas">ListaEventosSalasActivity</string>
+</resources>
