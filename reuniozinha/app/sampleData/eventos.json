@@ -2,7 +2,7 @@
   "eventos": [
     {
       "colaborador": "Ana Martins",
-      "salaEscolhida": "@drawble/sala_conselho_jedi",
+      "salaEscolhida": "Sala Conselho Jedi",
       "empresa": "Wise System",
       "quantiadeDePessoas": 6,
       "coffeBreak": true,
@@ -10,13 +10,30 @@
     },
 
     {
-      "colaborador": "Ana Martins",
-      "salaEscolhida": "Sala Conselho Jedi",
+      "colaborador": "Veronica Souza",
+      "salaEscolhida": "Sala Gandalf",
       "empresa": "Wise System",
-      "quantiadeDePessoas": 6,
+      "quantiadeDePessoas": 10,
       "coffeBreak": true,
       "dataReuniao": "29/01/2020"
-    }
+    },
 
+    {
+      "colaborador": "Guilherme Ramalho",
+      "salaEscolhida": "Sala Conselho Elfico",
+      "empresa": "Wise System",
+      "quantiadeDePessoas": 3,
+      "coffeBreak": false,
+      "dataReuniao": "30/01/2020"
+    },
+
+    {
+      "colaborador": "Pedro Cabral",
+      "salaEscolhida": "Sala Conselho Jedi",
+      "empresa": "Wise System",
+      "quantiadeDePessoas": 3,
+      "coffeBreak": true,
+      "dataReuniao": "02/02/2020"
+    }
   ]
 }

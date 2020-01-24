@@ -11,25 +11,25 @@ public class EventoDAO {
         List<Evento> eventos = new ArrayList<>(Arrays.asList(
                 new Evento(
                         "Ana Martins",
-                        "sala_conselho_jedi",
+                        "Sala Conselho Jedi",
                         "Wise Systems",
                         6,
-                        true, "29/01/2020"),
+                        true, "29/01/2020", "sala_conselho_jedi.png"),
                 new Evento("Guilherme Ramalho",
-                        "sala_conselho_elfico",
+                        "Sala Conselho Elfico",
                         "Wise Systems",
                         3,
-                        false, "30/01/2020"),
+                        false, "30/01/2020", "sala_conselho_jedi.png"),
                 new Evento("Veronica Souza",
-                        "sala_gandalf",
+                        "Sala Gandalf",
                         "Wise Systems",
                         10,
-                        true, "29/01/2020"),
+                        true, "29/01/2020", "sala_conselho_jedi.png"),
                 new Evento("Pedro Cabral",
-                        "sala_conselho_jedi",
+                        "Sala Conselho Jedi",
                         "Wise Systems",
                         3,
-                        false, "02/02/2020")));
+                        false, "02/02/2020", "sala_conselho_jedi.png")));
         return eventos;
     }
 

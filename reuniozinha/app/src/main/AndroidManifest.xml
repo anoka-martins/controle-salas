@@ -12,7 +12,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activities.ListaEventosSalasActivity"></activity>
+        <activity android:name=".ui.activities.VisaoMensalReservasActivity"></activity>
+        <activity android:name=".ui.activities.ListaEventosSalasActivity" />
         <activity android:name=".ui.activities.CadastroSalaActivity" />
         <activity
             android:name=".SplashActitvity"
