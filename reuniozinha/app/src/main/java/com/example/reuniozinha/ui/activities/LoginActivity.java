@@ -46,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
 
     public static int makeAuthRequest(String email, String password) throws Exception {
         try {
-            String wsURL = "http://localhost:8080/ReservaDeSala/rest/usuario/cadastro";
+            String wsURL = "http://localhost:8080/ReservaDeSala/rest/usuario/login";
             URL obj = new URL(wsURL);
             HttpURLConnection con = (HttpURLConnection) obj.openConnection();
             con.setRequestMethod("GET");
