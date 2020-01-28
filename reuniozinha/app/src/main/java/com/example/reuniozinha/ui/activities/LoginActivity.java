@@ -6,8 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 
 import com.example.reuniozinha.R;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -21,7 +27,7 @@ public class LoginActivity extends AppCompatActivity {
         String emailString = emailUsuario.getText().toString();
         String senhaString = senhaUsuario.getText().toString();
 
-        Button botaoEntrar = findViewById(R.id.id_botao_efetuar_cadastro);
+        Button botaoEntrar = findViewById(R.id.id_botao_login);
         botaoEntrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,23 +50,28 @@ public class LoginActivity extends AppCompatActivity {
         });
     }
 
-    public static int makeAuthRequest(String email, String password) throws Exception {
-        try {
-            String wsURL = "http://localhost:8080/ReservaDeSala/rest/usuario/login";
-            URL obj = new URL(wsURL);
-            HttpURLConnection con = (HttpURLConnection) obj.openConnection();
-            con.setRequestMethod("GET");
-            con.setRequestProperty("Content-Type", "application/json; utf-8");
-            con.setRequestProperty("authorization", "secret");
-            con.setConnectTimeout(2000);
-            con.setRequestProperty("email", email);
-            con.setRequestProperty("password", password);
+    public static String makeAuthRequest(String email, String password) throws Exception {
+        String wsURL = "http://localhost:8080/ReservaDeSala/rest/usuario/login";
 
-            int responseCode = con.getResponseCode();
-            return responseCode;
+        try {
+            StringBuilder result = new StringBuilder();
+            URL url = new URL(wsURL);
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setRequestMethod("GET");
+            conn.setRequestProperty("authorization", "secret");
+            conn.setRequestProperty("email", email);
+            conn.setRequestProperty("password", password);
+
+            BufferedReader rd = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            String line;
+            while ((line = rd.readLine()) != null) {
+                result.append(line);
+            }
+            rd.close();
+            return result.toString();
         } catch (Exception e) {
             e.printStackTrace();
-            return 400;
+            return "Erro";
         }
     }
 }
