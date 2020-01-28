@@ -15,6 +15,11 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tela_login);
+        final EditText emailUsuario = findViewById(R.id.id_campo_email);
+        final EditText senhaUsuario = findViewById(R.id.id_campo_senha);
+
+        String emailString = emailUsuario.getText().toString();
+        String senhaString = senhaUsuario.getText().toString();
 
         Button botaoEntrar = findViewById(R.id.id_botao_efetuar_cadastro);
         botaoEntrar.setOnClickListener(new View.OnClickListener() {
@@ -37,5 +42,25 @@ public class LoginActivity extends AppCompatActivity {
                        CadastroColaboradorActivity.class));
             }
         });
+    }
+
+    public static int makeAuthRequest(String email, String password) throws Exception {
+        try {
+            String wsURL = "http://localhost:8080/ReservaDeSala/rest/usuario/cadastro";
+            URL obj = new URL(wsURL);
+            HttpURLConnection con = (HttpURLConnection) obj.openConnection();
+            con.setRequestMethod("GET");
+            con.setRequestProperty("Content-Type", "application/json; utf-8");
+            con.setRequestProperty("authorization", "secret");
+            con.setConnectTimeout(2000);
+            con.setRequestProperty("email", email);
+            con.setRequestProperty("password", password);
+
+            int responseCode = con.getResponseCode();
+            return responseCode;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return 400;
+        }
     }
 }
