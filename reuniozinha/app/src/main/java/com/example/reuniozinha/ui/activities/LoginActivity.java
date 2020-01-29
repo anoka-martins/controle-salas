@@ -10,11 +10,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.reuniozinha.R;
-
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
+import com.example.reuniozinha.services.Verificador;
 
 public class LoginActivity extends AppCompatActivity {
 

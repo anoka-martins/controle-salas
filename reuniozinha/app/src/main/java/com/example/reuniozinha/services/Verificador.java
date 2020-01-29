@@ -1,4 +1,4 @@
-package com.example.reuniozinha.ui.activities;
+package com.example.reuniozinha.services;
 
 import android.os.AsyncTask;
 import java.io.BufferedReader;
@@ -31,6 +31,7 @@ public class Verificador extends AsyncTask<String, Void, String> {
                 result.append(line);
             }
             rd.close();
+            System.out.println("Resultado do login: " + result.toString());
             return result.toString();
         }
         catch (Exception e)
