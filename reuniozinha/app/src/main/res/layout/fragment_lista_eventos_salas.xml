@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF" >
+
+    <ImageView
+        android:id="@+id/id_logo_balao"
+        android:layout_width="82dp"
+        android:layout_height="119dp"
+        android:layout_marginTop="4dp"
+        android:src="@mipmap/ic_logo_fundo_branco"
+        app:layout_constraintBottom_toTopOf="@+id/id_texto_interacao_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <TextView
+        android:id="@+id/id_nome_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="reuniãozinha"
+        android:textAlignment="center"
+        android:textColor="#FF8C00"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/id_texto_interacao_usuario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toStartOf="@+id/id_logo_balao"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+
+    <TextView
+        android:id="@+id/id_slogan"
+        android:layout_width="179dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="planejamento &amp; pessoas"
+        android:textColor="#191970"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="@+id/id_logo_balao"
+        app:layout_constraintTop_toBottomOf="@+id/id_nome_app" />
+
+    <View
+        android:id="@+id/unidade_evento_divisor"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_orange_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/id_slogan" />
+
+    <ImageView
+        android:id="@+id/id_icon_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/id_minha_conta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_slogan"
+        app:layout_constraintVertical_bias="0.756"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <View
+        android:id="@+id/view_email"
+        android:layout_width="222dp"
+        android:layout_height="36dp"
+        android:background="#191970"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="420dp" />
+
+    <TextView
+        android:id="@+id/id_empresa_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:text="empresa"
+        android:textColor="#191970"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_email" />
+
+    <TextView
+        android:id="@+id/id_email_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/montserrat"
+        android:text="e-mail"
+        android:textColor="#191970"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view_nome" />
+
+    <TextView
+        android:id="@+id/id_nome_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat"
+        android:text="colaborador"
+        android:textColor="#191970"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_minha_conta" />
+
+    <View
+        android:id="@+id/view_nome"
+        android:layout_width="222dp"
+        android:layout_height="36dp"
+        android:background="#191970"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="222dp"
+        android:layout_height="36dp"
+        android:background="#191970"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="504dp" />
+
+    <TextView
+        android:id="@+id/id_minha_conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="328dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="minha conta"
+        android:textColor="#FF8C00"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

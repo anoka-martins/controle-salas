@@ -54,7 +54,7 @@
         android:id="@+id/id_texto_interacao_usuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
+        android:layout_marginTop="160dp"
         android:fontFamily="@font/montserrat"
         android:text="bem-vind@! :)"
         android:textColor="#191970"
@@ -63,89 +63,63 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/id_texto_nome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="NOME"
-        android:textColor="#191970"
-        app:layout_constraintBottom_toTopOf="@+id/id_campo_nome"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.265"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_texto_interacao_usuario"
-        app:layout_constraintVertical_bias="0.836" />
-
     <EditText
         android:id="@+id/id_campo_nome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
         android:ems="10"
+        android:hint="g"
         android:inputType="textPersonName"
-        android:text="Name"
-        android:textColor="#2196F3"
+        android:textColor="#FF8C00"
         app:layout_constraintBottom_toTopOf="@+id/id_campo_email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_texto_interacao_usuario"
-        app:layout_constraintVertical_bias="0.585" />
-
-    <TextView
-        android:id="@+id/id_texto_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="E-MAIL"
-        android:textColor="#191970"
-        app:layout_constraintBottom_toTopOf="@+id/id_texto_senha"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.27"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_texto_nome" />
-
-    <EditText
-        android:id="@+id/id_campo_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:textColor="#2196F3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_texto_interacao_usuario"
-        app:layout_constraintVertical_bias="0.372" />
-
-    <TextView
-        android:id="@+id/id_texto_senha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:fontFamily="@font/montserrat_bold"
-        android:text="SENHA"
-        android:textColor="#191970"
-        app:layout_constraintBottom_toTopOf="@+id/id_botao_efetuar_cadastro"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.27"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/id_texto_nome"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.521" />
 
     <EditText
         android:id="@+id/id_campo_senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
         android:ems="10"
         android:inputType="numberPassword"
-        android:textColor="#2196F3"
+        android:textColor="#FF8C00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_campo_email"
-        app:layout_constraintVertical_bias="0.248" />
+        app:layout_constraintVertical_bias="0.229" />
+
+    <TextView
+        android:id="@+id/id_texto_email"
+        android:layout_width="52dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="E-MAIL"
+        android:textColor="#191970"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.261"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_texto_interacao_usuario" />
+
+    <EditText
+        android:id="@+id/id_campo_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#FF8C00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_texto_interacao_usuario"
+        app:layout_constraintVertical_bias="0.337" />
 
     <Button
         android:id="@+id/id_botao_efetuar_cadastro"
@@ -158,8 +132,70 @@
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/id_campo_email"
-        app:layout_constraintVertical_bias="0.979" />
+        app:layout_constraintVertical_bias="0.7" />
+
+    <TextView
+        android:id="@+id/id_texto_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="SENHA"
+        android:textColor="#191970"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_texto_interacao_usuario" />
+
+    <TextView
+        android:id="@+id/id_texto_nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="NOME"
+        android:textColor="#191970"
+        app:layout_constraintBottom_toTopOf="@+id/id_campo_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.251"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/id_texto_interacao_usuario"
+        app:layout_constraintVertical_bias="0.818" />
+
+    <TextView
+        android:id="@+id/id_texto_voltar"
+        android:layout_width="235dp"
+        android:layout_height="59dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Ops! Já tenho uma conta! "
+        android:textAlignment="textStart"
+        android:textColor="#191970"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/id_botao_voltar_login"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="208dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="14dp"
+        android:background="#00FFFFFF"
+        android:fontFamily="@font/montserrat_bold"
+        android:linksClickable="true"
+        android:text="VOLTAR PARA O LOGIN"
+        android:textColor="#FF8C00"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/id_texto_voltar"
+        app:layout_constraintVertical_bias="0.894" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

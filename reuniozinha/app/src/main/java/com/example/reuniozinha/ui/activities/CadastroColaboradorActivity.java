@@ -52,7 +52,7 @@ public class CadastroColaboradorActivity extends AppCompatActivity {
 
                     System.out.println(novoUsuarioEncoded.toString());
 
-                    String respostaMetodo = new VerificadorCadastro().execute(emailUsuarioStr, nomeUsuarioStr, senhaUsuarioStr).get();
+                    String respostaMetodo = new VerificadorCadastro().execute(novoUsuarioEncoded).get();
 
                     if (respostaMetodo.equals("Usuário criado com sucesso")) {
                         startActivity(new Intent(
@@ -67,6 +67,18 @@ public class CadastroColaboradorActivity extends AppCompatActivity {
                             "Erro ao efetuar cadastro!",
                             Toast.LENGTH_SHORT).show();
                 }
+            }
+        });
+
+        Button botaoVoltarParaTelaLogin = findViewById(R.id.id_botao_voltar_login);
+        botaoVoltarParaTelaLogin.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(
+                        CadastroColaboradorActivity.this,
+                        LoginActivity.class));
             }
         });
 

@@ -82,10 +82,15 @@
         android:id="@+id/id_campo_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:outlineAmbientShadowColor="#FF8C00"
+        android:shadowColor="#FF8C00"
         android:textColor="#FF8C00"
-        android:textColorHint="#FF8C00"
+        android:textColorHighlight="#FF8C00"
+        android:textColorHint="#E1FF8C00"
+        android:textColorLink="#FF8C00"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
@@ -112,11 +117,12 @@
         android:id="@+id/id_campo_senha"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/edit_text"
         android:ems="10"
         android:inputType="numberPassword"
         android:textColor="#FF8C00"
         android:textColorHighlight="#FF8C00"
-        android:textColorHint="#FF8C00"
+        android:textColorHint="#E0FF8C00"
         android:textColorLink="@color/colorAccent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -141,7 +147,7 @@
         app:layout_constraintVertical_bias="0.179" />
 
     <TextView
-        android:id="@+id/id_texto_cadastro"
+        android:id="@+id/id_texto_voltar"
         android:layout_width="187dp"
         android:layout_height="51dp"
         android:layout_marginBottom="36dp"
@@ -157,7 +163,7 @@
         app:layout_constraintVertical_bias="0.645" />
 
     <Button
-        android:id="@+id/id_botao_cadastrar"
+        android:id="@+id/id_botao_voltar_login"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_width="143dp"
         android:layout_height="49dp"
@@ -166,6 +172,7 @@
         android:fontFamily="@font/montserrat_bold"
         android:linksClickable="true"
         android:text="CADASTRE-SE"
+        android:textColor="#FF8C00"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
